@@ -1,0 +1,27 @@
+{
+  "name": "cse341-p01-contacts",
+  "version": "1.0.0",
+  "description": "CSE 341 - Project 01 - Contact part 1",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micrand/cse341-p01-contacts.git"
+  },
+  "keywords": [
+    "CSE341",
+    "Contacts",
+    "NodeJS",
+    "Express",
+    "API",
+    "Webservices"
+  ],
+  "author": "Mickael Randriamihaja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/micrand/cse341-p01-contacts/issues"
+  },
+  "homepage": "https://github.com/micrand/cse341-p01-contacts#readme"
+}
