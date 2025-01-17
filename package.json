@@ -4,7 +4,8 @@
   "description": "CSE 341 - Project 01 - Contact part 1",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,10 @@
   "bugs": {
     "url": "https://github.com/micrand/cse341-p01-contacts/issues"
   },
-  "homepage": "https://github.com/micrand/cse341-p01-contacts#readme"
+  "homepage": "https://github.com/micrand/cse341-p01-contacts#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  }
 }
