@@ -1,0 +1,7 @@
+GET https://three40-starter-a7mv.onrender.com/users   HTTP/1.1
+
+###
+
+GET https://three40-starter-a7mv.onrender.com/users/59b99db4cfa9a34dcd7885b6    HTTP/1.1
+
+####
