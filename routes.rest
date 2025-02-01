@@ -1,0 +1,38 @@
+#GET https://three40-starter-a7mv.onrender.com/users   HTTP/1.1
+
+GET http://localhost:3001/users
+
+###
+GET http://localhost:3001/users/679da69ed7bffe0fbc03f854
+
+
+### Create user
+POST http://localhost:3001/users HTTP/1.1
+content-type: application/json
+
+{   
+    "username": "kilim",
+    "name": "Kili Manja",
+    "email": "jamarokil@gameoftrone.mg",
+    "ipaddress": "172.145.241.49"
+}
+
+###
+PUT http://localhost:3001/users/679da69ed7bffe0fbc03f854 HTTP/1.1
+content-type: application/json
+
+{       
+    "username": "francesco",
+    "name": "Francesco Debi",
+    "email": "francesco@gameoftrone.mg",
+    "ipaddress": "152.15.75.24"
+}
+
+###
+DELETE http://localhost:3001/users/679da69ed7bffe0fbc03f854 HTTP/1.1
+
+###
+
+#GET https://three40-starter-a7mv.onrender.com/users/59b99db4cfa9a34dcd7885b6    HTTP/1.1
+
+####

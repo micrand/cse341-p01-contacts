@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-
+const bodyParser = require('body-parser');
 const mongodb = require('./data/database');
 
 
@@ -19,9 +19,20 @@ app
     //     res.render('pages/404', { title: '404 - Page Not Found', path: req.url });
     // })
 
+app.use(bodyParser.json())
+app.use((req,res,next)=>{
+    res.setHeader('Access-Control-Allow-Origin', '*')
+    res.setHeader(
+        'Access-Control-Allow-Headers',
+        'Origin, X-Request-With, Content-Type, Accept, Z-key'        
+    )
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS')
+    next()
+})
 app
     .use('/', require('./routes'))
     .use('/users', require('./routes/users'))
+
 
 mongodb.initDb( (err)=>{
     if(err){
@@ -29,7 +40,7 @@ mongodb.initDb( (err)=>{
     }
     else{
         app.listen(PORT, () => {
-            console.log(`Database is listening and node running on ${PORT}`)
+            console.log(`Database is listening and node running on localhost:${PORT}`)
         })
     }
 })
