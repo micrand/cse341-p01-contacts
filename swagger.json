@@ -5,10 +5,9 @@
     "description": "Users API swagger document",
     "version": "1.0.0"
   },
-  "host": "localhost:3001",
+  "host": "three40-starter-a7mv.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http",
     "https"
   ],
   "paths": {
